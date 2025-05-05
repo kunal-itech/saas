@@ -1,13 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include 'base/css.html' %}
     <title>{% block head_title %}Saas{% endblock head_title %}</title>
 </head>
 <body>
-    <h1>Helo</h1>
+    {% include 'nav/navbar.html' %}
     {% block content %}
     {% endblock content %}
+    {% include 'base/js.html' %}    
 </body>
 </html>
